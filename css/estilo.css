@@ -1,3 +1,89 @@
-h1{
-    color:blueviolet;
+body{
+    background-color:rgb(243, 222, 204);
+    color:rgb(238, 38, 238);  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h1{
+background-color: darkgreen;
+   color:#ECCE73;
+   font-family:Georgia,'Times New Roman', Times, serif;
+   font-size: 180%;
+}
+
+/*estilo para una etiqueta existente*/
+h3 {
+    color: rgb(182, 180, 74);
+}
+
+/* primer estilo aplicandolo para un class*/
+.estilo_div {
+    background-color: rgba(245, 146, 132, 0.938);
+    color: rgb(133, 98, 66);
+}
+
+/*Aplicando para un id por eso se usa #*/
+#parrafo1 {
+    color: mediumblue;
+}
+#parrafo2 {
+    color: mediumpurple;
+}
+/*Aplicando una clase* se usa .*/
+.cajas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .caja_grande{
+      width:32.6%;
+      height: 200px;
+      border-style: solid;
+      border-color:black;
+      display:inline-block
+      }
+  .caja_morada{
+    display: flex; 
+  }
+  .caja_naranja{
+      width:70%;
+      height: 45px;
+  }
+  .caja_amarilla{
+    width:25%;
+    height: 45px;
+    text-align: right
+ }
+  .icono1{
+    font-size: 25 px;
+    color: indigo;
+    padding: 5px 5px 0px 5px
+}
+  .caja_azul_oscuro{
+    display: flex;
+  }
+  
+  .caja_azul_claro{
+    width: 48%;
+    height: 100px;
+ }
+  
+ .caja_verde{
+    width: 48%;
+    height: 100px;
+ }
+ .caja_roja{
+    width: 98%;
+    height: 45px;
+    text-align: right
+ }
+  .diseño_boton{
+      width: 30%;
+      height: 30px;
+      background-color:orange;
+      border-color:orange;
+      Color:white;
+  }
+
+  

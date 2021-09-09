@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página formulario</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head> 
-    
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://kit.fontawesome.com/5c12f6cddc.js" crossorigin="anonymous"></script>
+    <style>
+        /*Aqui se puede crear estilo en caso de quererlo hacer interno*/
+    </style>
+</head>
+
 <body>
     <main>
         <center>
@@ -16,7 +20,9 @@
             <br />
             <br />
             <form>
-                <label id= "label_nombre" form="nombre" style= "color: blue; background-color: brown;"> Nombre: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!--para aplicar el  estilo en línea se hace dentro del label como se muestra a continuacion*/-->
+                <label id="label_nombre" form="nombre" style="color: blue; background-color: brown;"> Nombre:
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" id="nombre" name="txtNombre" placeholder="Ingrese el nombre" mxmlength="10" size="40"
                     required> <br /> <br />
                 <label form="edad">Edad: </label>
@@ -35,20 +41,20 @@
                 <textarea name="Observaciones" rows="3" cols="50"></textarea>
                 <br /> <br />
                 <label>Genero: </label>
-                <label>Masculino</label><input type= "radio" name="genero" value= "Masculino">
-                <label>Femenino</label><input type= "radio" name="genero" value= "Femenino">
+                <label>Masculino</label><input type="radio" name="genero" value="Masculino">
+                <label>Femenino</label><input type="radio" name="genero" value="Femenino">
                 <br /> <br />
-                <Label>Ingresar materias: </Label> <br /> 
-                <label>Matemáticas</label><input type= "checkbox" name="matematica" value="matematicas" cheched> <br /> 
-                <label>Fisica</label><input type= "checkbox" name="fisica" value="fisica" cheched>  <br /> 
-                <label>Ingles</label><input type= "checkbox" name="ingles" value="ingles" cheched>  <br />
-                <label>Sociales</label><input type= "checkbox" name="sociales" value="sociales" cheched>  <br /> <br/>
+                <Label>Ingresar materias: </Label> <br />
+                <label>Matemáticas</label><input type="checkbox" name="matematica" value="matematicas" cheched> <br />
+                <label>Fisica</label><input type="checkbox" name="fisica" value="fisica" cheched> <br />
+                <label>Ingles</label><input type="checkbox" name="ingles" value="ingles" cheched> <br />
+                <label>Sociales</label><input type="checkbox" name="sociales" value="sociales" cheched> <br /> <br />
                 <input type="submit" value="Grabar">
                 <input type="submit" value="cancelar">
             </form>
-            <br/>
+            <br />
             <h3>LISTADO DE MATRIAS SEMANAL </h3>
-            <br/>
+            <br />
             <table border=1>
                 <tr>
                     <th>MATERIA</th>
@@ -57,7 +63,7 @@
                     <th>MIERCOLES</th>
                     <td>JUEVES</td>
                     <td>VIERNES</td>
-                    
+
                 </tr>
                 <tr>
                     <td>FISICA</td>
@@ -69,11 +75,96 @@
                 </tr>
             </table>
         </center>
+        <br />
+        <br />
     </main>
 
     <!--Parte informativa-->
     <footer>
+        
+            <div class="caja_grande">
+                <div class="caja_morada">
+                    <div class="caja_naranja"> <h1>Título</h1></div>
+                    <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+                </div>
+                <div class="caja_azul_oscuro">
+                    <div class="caja_azul_claro">
+                        <p>prueba1</p>
+                        <p>prueba2</p>
+                        <p>prueba3</p>
+                    </div>
+                    <div class="caja_verde">
+                        <p>parrafo1</p>
+                        <p>parrafo2</p>
+                        <p>parrafo3</p>
+                    </div>
+                </div>
+                <div class="caja_roja">
+                    <button class= "diseño_boton">Guardar</button>               
+                </div>
+            </div>
+            <div class="caja_grande">
+                <div class="caja_morada">
+                    <div class="caja_naranja"> <h1>Título</h1></div>
+                    <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+                </div>
+                <div class="caja_azul_oscuro">
+                    <div class="caja_azul_claro">
+                        <p>prueba1</p>
+                        <p>prueba2</p>
+                        <p>prueba3</p>
+                    </div>
+                    <div class="caja_verde">
+                        <p>parrafo1</p>
+                        <p>parrafo2</p>
+                        <p>parrafo3</p>
+                    </div>
+                </div>
+                <div class="caja_roja">
+                    <button class= "diseño_boton">Guardar</button>               
+                </div>
+            </div>
+            <div class="caja_grande">
+                <div class="caja_morada">
+                    <div class="caja_naranja"> <h1>Título</h1></div>
+                    <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+                </div>
+                <div class="caja_azul_oscuro">
+                    <div class="caja_azul_claro">
+                        <p>prueba1</p>
+                        <p>prueba2</p>
+                        <p>prueba3</p>
+                    </div>
+                    <div class="caja_verde">
+                        <p>parrafo1</p>
+                        <p>parrafo2</p>
+                        <p>parrafo3</p>
+                    </div>
+                </div>
+                <div class="caja_roja">
+                    <button class="diseño_boton">Guardar</button>               
+                </div>
+            </div>
+        <br />
+        <br />
 
+        <div class="cajas">
+            <div class="estilo_div">
+                <p id="parrafo1"> El pesimismo lleva a la debilidad. El optimismo, al poder</p>
+                <p id="parrafo2"> Hay que endurecerse sin perder jamás la ternura</p>
+                <p> Pedir perdón es de inteligentes, perdonar es de nobles y perdonarse es de sabios (Anónimo)</p>
+            </div>
+            <div class="estilo_div">
+                <p id="parrafo1"> El pesimismo lleva a la debilidad. El optimismo, al poder</p>
+                <p id="parrafo2"> Hay que endurecerse sin perder jamás la ternura</p>
+                <p> Pedir perdón es de inteligentes, perdonar es de nobles y perdonarse es de sabios (Anónimo)</p>
+            </div>
+            <div class="estilo_div">
+                <p id="parrafo1"> El pesimismo lleva a la debilidad. El optimismo, al poder</p>
+                <p id="parrafo2"> Hay que endurecerse sin perder jamás la ternura</p>
+                <p> Pedir perdón es de inteligentes, perdonar es de nobles y perdonarse es de sabios (Anónimo)</p>
+            </div>
+        </div>
     </footer>
 </body>
 
