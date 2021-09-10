@@ -96,16 +96,16 @@ background-color: darkgreen;
     width: 200px;
     height: 40px;
     background-color: orange;
+    border-width:1px;
     color: white;
     margin: 0px 20px 30px 0;
     text-decoration: none;
     padding-top: 14px;
     /*padding: 6px 30px 0x 0x ;*/
   }
-  # menu a:hover{
-
-    background-color: violet;
-    
+  #menu a:hover{
+    background-color: orangered;
+    cursor:pointer;    
   }
 
   .formulario{
@@ -137,5 +137,67 @@ background-color: darkgreen;
     background-color: orangered;
     cursor:pointer;
   }
-
+ .estilo_tabla{
+   width: 80%;
+   border-collapse: collapse;
+   /*border-style: solid;
+   border-color: rgba(143, 145, 145, 0.473);*/
+   border: 1px solid rgba(143, 145, 145, 0.473);
+  }
   
+  th, td {
+    border: 1px solid rgba(143, 145, 145, 0.473); 
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+  }
+
+  th{
+    background-color: rgba(176, 132, 218, 0.548);
+  }
+  
+  /*Si el tamaño maximo del dispositivo es 640px entonces... celulares*/
+  @media(max-width: 640px){
+    header{
+      text-align: center;
+    }
+    #menu ul{
+      flex-direction: column;
+      display: block;
+      align-items: center;
+    }
+    #menu li a{
+     width: 90%;
+     height: 40 px;
+    }
+    .formulario{
+      width: 90%;
+      text-align:left;
+      padding: 0px 0px 0px 0px
+    }
+    .boton_formulario{
+      width: 30%;
+      height: 40 px;
+    }
+    .caja_grande{
+      width: 95%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+/* tamaño para pantallas intermedias*/
+  @media(min-width: 640px) and (max-width: 1280 px){
+
+   .formulario{
+    width: 94%;
+    text-align:left;
+    padding: 0px 0px 0px 0px
+   }
+
+   .caja_grande{
+    width: 95%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}

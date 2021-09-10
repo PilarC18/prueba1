@@ -31,7 +31,153 @@
 
     </header>
 
+    
     <main>
+        <center>
+            <h1> FORMULARIO</h1>
+            <br />
+            <br />
+            <form class="formulario">
+                <!--para aplicar el  estilo en línea se hace dentro del label como se muestra a continuacion*/-->
+                <label class="diseño_label" id="label_nombre" form="nombre">Nombre:</label>
+                <input class: "diseño_input" type="text" id="nombre" name="txtNombre" placeholder="Ingrese el nombre">
+                <br /> <br />
+                <label class="diseño_label" form="edad">Edad: </label>
+                <input class: "diseño_input"type="number" id="edad" name="txtEdad" min=0 max=150 size="40"><br /> <br />
+                <label class="diseño_label"> Fecha de nacimiento: </label>
+                <input class: "diseño_input"type="date" name="txtFecha"> <br /> <br />
+                <label class="diseño_label"> Correo electrònico: </label>
+                <input class: "diseño_input"type="email" name="txtCorreo"> <br /> <br />
+                <label class="diseño_label" for="">Seleccione documento </label>
+                <select value="tipo de documento">
+                    <option value="C.C">Cedula</option>
+                    <option value="T.I">Tarjeta</option>
+                    <option value="C.E">Cedula Extranjeria</option>
+                </select> <br /> <br />
+                <label class="diseño_label">Observaciones: </label>
+                <textarea name="Observaciones" rows="3" cols="50"></textarea>
+                <br /> <br />
+                <label class="diseño_label">Genero: </label>
+                <label>Masculino</label><input type="radio" name="genero" value="Masculino">
+                <label>Femenino</label><input type="radio" name="genero" value="Femenino">
+                <br /> <br />
+                <Label class="diseño_label">Ingresar materias: </Label>
+                <div>
+                    <label>Matemáticas</label><input class="diseño_label" type="checkbox" name="matematica" value="matematicas" cheched>
+                    <label>Fisica</label><input class="diseño_label" type="checkbox" name="fisica" value="fisica" cheched>
+                    <label>Ingles</label><input class="diseño_label" type="checkbox" name="ingles" value="ingles" cheched>
+                    <label>Sociales</label><input class="diseño_label" type="checkbox" name="sociales" value="sociales" cheched>
+                    
+                    <br />
+                </div>
+                <center>
+                    <input class=boton_formulario type="submit" value="Grabar">
+                    <input class=boton_formulario type="submit" value="cancelar">
+                </center>
+            </form>
+            <br />
+            <h3>LISTADO DE MATRIAS SEMANAL </h3>
+            <br />
+            <table class="estilo_tabla">
+                <tr>
+                    <th>MATERIA</th>
+                    <td>LUNES</td>
+                    <td>MARTES</td>
+                    <th>MIERCOLES</th>
+                    <td>JUEVES</td>
+                    <td>VIERNES</td>
+
+                </tr>
+                <tr>
+                    <td>FISICA</td>
+                    <td></td>
+                    <td>8-10 am </td>
+                    <td></td>
+                    <td>8-10 am </td>
+                    <td> </td>
+                </tr>
+
+            </table>
+        </center>
+        <br />
+        <br />
+    </main>
+
+    <!--Parte informativa-->
+    <footer>
+
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Título</h1>
+                </div>
+                <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
+                </div>
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
+                </div>
+            </div>
+            <div class="caja_roja">
+                <button class="diseño_boton">Guardar</button>
+            </div>
+        </div>
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Título</h1>
+                </div>
+                <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
+                </div>
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
+                </div>
+            </div>
+            <div class="caja_roja">
+                <button class="diseño_boton">Guardar</button>
+            </div>
+        </div>
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Título</h1>
+                </div>
+                <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
+                </div>
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
+                </div>
+            </div>
+            <div class="caja_roja">
+                <button class="diseño_boton">Guardar</button>
+            </div>
+        </div>
+        <br />
+        <br />
+
         <!--Colocar formulario-->
         <center>
             <h1>Ejemplo de lista 1 </h1>
