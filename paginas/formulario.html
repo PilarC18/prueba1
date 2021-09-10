@@ -19,38 +19,42 @@
             <h1> FORMULARIO</h1>
             <br />
             <br />
-            <form>
+            <form class="formulario">
                 <!--para aplicar el  estilo en línea se hace dentro del label como se muestra a continuacion*/-->
-                <label id="label_nombre" form="nombre" style="color: blue; background-color: brown;"> Nombre:
-                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="nombre" name="txtNombre" placeholder="Ingrese el nombre" mxmlength="10" size="40"
-                    required> <br /> <br />
-                <label form="edad">Edad: </label>
+                <label class="diseño_label" id="label_nombre" form="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="txtNombre" placeholder="Ingrese el nombre">
+                <br /> <br />
+                <label class="diseño_label" form="edad">Edad: </label>
                 <input type="number" id="edad" name="txtEdad" min=0 max=150 size="40"><br /> <br />
-                <label> Fecha de nacimiento: </label>
+                <label class="diseño_label"> Fecha de nacimiento: </label>
                 <input type="date" name="txtFecha"> <br /> <br />
-                <label> Correo electrònico: </label>
+                <label class="diseño_label"> Correo electrònico: </label>
                 <input type="email" name="txtCorreo"> <br /> <br />
-                <label for="">Seleccione documento </label>
+                <label class="diseño_label" for="">Seleccione documento </label>
                 <select value="tipo de documento">
                     <option value="C.C">Cedula</option>
                     <option value="T.I">Tarjeta</option>
                     <option value="C.E">Cedula Extranjeria</option>
                 </select> <br /> <br />
-                <label>Observaciones: </label>
+                <label class="diseño_label">Observaciones: </label>
                 <textarea name="Observaciones" rows="3" cols="50"></textarea>
                 <br /> <br />
-                <label>Genero: </label>
+                <label class="diseño_label">Genero: </label>
                 <label>Masculino</label><input type="radio" name="genero" value="Masculino">
                 <label>Femenino</label><input type="radio" name="genero" value="Femenino">
                 <br /> <br />
-                <Label>Ingresar materias: </Label> <br />
-                <label>Matemáticas</label><input type="checkbox" name="matematica" value="matematicas" cheched> <br />
-                <label>Fisica</label><input type="checkbox" name="fisica" value="fisica" cheched> <br />
-                <label>Ingles</label><input type="checkbox" name="ingles" value="ingles" cheched> <br />
-                <label>Sociales</label><input type="checkbox" name="sociales" value="sociales" cheched> <br /> <br />
-                <input type="submit" value="Grabar">
-                <input type="submit" value="cancelar">
+                <Label class="diseño_label">Ingresar materias: </Label>
+                <div>
+                    <label>Matemáticas</label><input type="checkbox" name="matematica" value="matematicas" cheched>
+                    <label>Fisica</label><input type="checkbox" name="fisica" value="fisica" cheched>
+                    <label>Ingles</label><input type="checkbox" name="ingles" value="ingles" cheched>
+                    <label>Sociales</label><input type="checkbox" name="sociales" value="sociales" cheched> <br />
+                    <br />
+                </div>
+                <center>
+                    <input class=boton_formulario type="submit" value="Grabar">
+                    <input class=boton_formulario type="submit" value="cancelar">
+                </center>
             </form>
             <br />
             <h3>LISTADO DE MATRIAS SEMANAL </h3>
@@ -81,70 +85,76 @@
 
     <!--Parte informativa-->
     <footer>
-        
-            <div class="caja_grande">
-                <div class="caja_morada">
-                    <div class="caja_naranja"> <h1>Título</h1></div>
-                    <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Título</h1>
                 </div>
-                <div class="caja_azul_oscuro">
-                    <div class="caja_azul_claro">
-                        <p>prueba1</p>
-                        <p>prueba2</p>
-                        <p>prueba3</p>
-                    </div>
-                    <div class="caja_verde">
-                        <p>parrafo1</p>
-                        <p>parrafo2</p>
-                        <p>parrafo3</p>
-                    </div>
+                <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
                 </div>
-                <div class="caja_roja">
-                    <button class= "diseño_boton">Guardar</button>               
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
                 </div>
             </div>
-            <div class="caja_grande">
-                <div class="caja_morada">
-                    <div class="caja_naranja"> <h1>Título</h1></div>
-                    <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            <div class="caja_roja">
+                <button class="diseño_boton">Guardar</button>
+            </div>
+        </div>
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Título</h1>
                 </div>
-                <div class="caja_azul_oscuro">
-                    <div class="caja_azul_claro">
-                        <p>prueba1</p>
-                        <p>prueba2</p>
-                        <p>prueba3</p>
-                    </div>
-                    <div class="caja_verde">
-                        <p>parrafo1</p>
-                        <p>parrafo2</p>
-                        <p>parrafo3</p>
-                    </div>
+                <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
                 </div>
-                <div class="caja_roja">
-                    <button class= "diseño_boton">Guardar</button>               
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
                 </div>
             </div>
-            <div class="caja_grande">
-                <div class="caja_morada">
-                    <div class="caja_naranja"> <h1>Título</h1></div>
-                    <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            <div class="caja_roja">
+                <button class="diseño_boton">Guardar</button>
+            </div>
+        </div>
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Título</h1>
                 </div>
-                <div class="caja_azul_oscuro">
-                    <div class="caja_azul_claro">
-                        <p>prueba1</p>
-                        <p>prueba2</p>
-                        <p>prueba3</p>
-                    </div>
-                    <div class="caja_verde">
-                        <p>parrafo1</p>
-                        <p>parrafo2</p>
-                        <p>parrafo3</p>
-                    </div>
+                <div class="caja_amarilla"><i icono1 class="fa-solid fa-bus"></i></div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
                 </div>
-                <div class="caja_roja">
-                    <button class="diseño_boton">Guardar</button>               
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
                 </div>
             </div>
+            <div class="caja_roja">
+                <button class="diseño_boton">Guardar</button>
+            </div>
+        </div>
         <br />
         <br />
 

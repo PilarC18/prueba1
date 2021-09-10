@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color:rgb(243, 222, 204);
     color:rgb(238, 38, 238);  
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -12,18 +12,18 @@ background-color: darkgreen;
 }
 
 /*estilo para una etiqueta existente*/
-h3 {
+/*h3 {
     color: rgb(182, 180, 74);
 }
 
 /* primer estilo aplicandolo para un class*/
-.estilo_div {
+/*.estilo_div {
     background-color: rgba(245, 146, 132, 0.938);
     color: rgb(133, 98, 66);
 }
 
 /*Aplicando para un id por eso se usa #*/
-#parrafo1 {
+/*#parrafo1 {
     color: mediumblue;
 }
 #parrafo2 {
@@ -84,6 +84,58 @@ h3 {
       background-color:orange;
       border-color:orange;
       Color:white;
+  }
+
+  #menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  #menu li a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    margin: 0px 20px 30px 0;
+    text-decoration: none;
+    padding-top: 14px;
+    /*padding: 6px 30px 0x 0x ;*/
+  }
+  # menu a:hover{
+
+    background-color: violet;
+    
+  }
+
+  .formulario{
+    width: 60%;
+    background-color: aquamarine;
+    text-align: left;
+    padding: 20px 0px 20px 50px;
+  }
+
+  .diseño_label{
+    width: 50% ;
+    display: inline-block;
+  }
+
+  .diseño_input{
+    display: inline-block;
+    width: 50%;
+  }
+  .boton_formulario{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    color:white ;
+    border-style: solid;
+    border-color: orange;
+  }
+
+  .boton_formulario:hover{
+    background-color: orangered;
+    cursor:pointer;
   }
 
   
