@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -19,7 +22,7 @@
 
 
         <!--Con la etiqueta nav declarampos que ahì va a ver un menu-->
-        <nav id= "menu">
+        <nav id="menu">
             <!--etiqueta Ul para declarar una lista, aparece con viñetas -->
             <ul>
                 <!-- Poner items a la lista-->
@@ -31,7 +34,7 @@
 
     </header>
 
-    
+
     <main>
         <center>
             <h1> FORMULARIO</h1>
@@ -43,11 +46,12 @@
                 <input class: "diseño_input" type="text" id="nombre" name="txtNombre" placeholder="Ingrese el nombre">
                 <br /> <br />
                 <label class="diseño_label" form="edad">Edad: </label>
-                <input class: "diseño_input"type="number" id="edad" name="txtEdad" min=0 max=150 size="40"><br /> <br />
+                <input class: "diseño_input" type="number" id="edad" name="txtEdad" min=0 max=150 size="40"><br />
+                <br />
                 <label class="diseño_label"> Fecha de nacimiento: </label>
-                <input class: "diseño_input"type="date" name="txtFecha"> <br /> <br />
+                <input class: "diseño_input" type="date" name="txtFecha"> <br /> <br />
                 <label class="diseño_label"> Correo electrònico: </label>
-                <input class: "diseño_input"type="email" name="txtCorreo"> <br /> <br />
+                <input class: "diseño_input" type="email" name="txtCorreo"> <br /> <br />
                 <label class="diseño_label" for="">Seleccione documento </label>
                 <select value="tipo de documento">
                     <option value="C.C">Cedula</option>
@@ -63,16 +67,21 @@
                 <br /> <br />
                 <Label class="diseño_label">Ingresar materias: </Label>
                 <div>
-                    <label>Matemáticas</label><input class="diseño_label" type="checkbox" name="matematica" value="matematicas" cheched>
-                    <label>Fisica</label><input class="diseño_label" type="checkbox" name="fisica" value="fisica" cheched>
-                    <label>Ingles</label><input class="diseño_label" type="checkbox" name="ingles" value="ingles" cheched>
-                    <label>Sociales</label><input class="diseño_label" type="checkbox" name="sociales" value="sociales" cheched>
-                    
+                    <label>Matemáticas</label><input class="diseño_label" type="checkbox" name="matematica"
+                        value="matematicas" cheched>
+                    <label>Fisica</label><input class="diseño_label" type="checkbox" name="fisica" value="fisica"
+                        cheched>
+                    <label>Ingles</label><input class="diseño_label" type="checkbox" name="ingles" value="ingles"
+                        cheched>
+                    <label>Sociales</label><input class="diseño_label" type="checkbox" name="sociales" value="sociales"
+                        cheched>
+
                     <br />
                 </div>
                 <center>
                     <input class=boton_formulario type="submit" value="Grabar">
                     <input class=boton_formulario type="submit" value="cancelar">
+
                 </center>
             </form>
             <br />
@@ -198,13 +207,135 @@
             <li><strong>Lista 2</strong> </li>
             <li>Lista 3</li>
         </ol>
-    </main>
+        </main>
 
-    <!--Colocar parte informativa-->
+        <!--Colocar parte informativa-->
 
-    <footer>
-        Curso Html
-    </footer>
+        <!--con boostrap-->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=" aliner_logo color1 col-12 col-md-6 col-xl-2">
+                        <a href="socios.html" target="blank">
+                            <img src="../img/imagen1.jpg" width="200" , height="100" alt="Mi página" />
+                        </a>
+
+                    </div>
+                    <div class=" aliner_logo color2 col-12 col-md-6 col-xl-3">
+                        <p class="fs-1">Bonita la página</p>
+
+                    </div>
+                    <div class="color3 col-12 col-md-6 col-xl-7">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </br></br></br>
+        <form class="form-register">
+            <div class="container">
+                <div class="row">
+                    <div class="color1 col-12 col-md-6">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Regular link</a></li>
+                            <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                            <li><a class="dropdown-item" href="#">Another link</a></li>
+                        </ul>
+                    </div>
+                    <div class="color2 col-12 col-md-6">
+                        <label class=" form-label" id="label_nombre" form="nombre">Nombre:</label>
+                        <input class=" form-control" type="text" id="nombre" name="txtNombre"
+                            placeholder="Ingrese el nombre">
+                        <label class=" font-weigth-bold" id="label_nombre" form="nombre">Nombre:</label>
+                        <input class=" form-control" type="text" id="nombre" name="txtNombre"
+                            placeholder="Ingrese el nombre">
+                        <br /> <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="color1 col-12 col-md-6">
+                        <label class=" form-label" id="label_nombre" form="nombre">fecha de nacimiento:</label>
+                        <input class=" form-control" type="text" id="nombre" name="txtNombre"
+                            placeholder="Ingrese el nombre">
+                    </div>
+                    <div class="color2 col-12 col-md-6">
+
+                        <label class=" font-weigth-bold" id="label_nombre" form="nombre">Nombre:</label>
+                        <input class=" form-control" type="text" id="nombre" name="txtNombre"
+                            placeholder="Ingrese el nombre">
+                        <br /> <br />
+                    </div>
+                </div>
+                <div class="row col-12 col-md-6">
+                    <div>
+                        <button type="button" class="btn btn-danger">Guardar</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                    </div>
+                </div>
+            </div>
+        </br>
+    </br>
+    
+            <script src="/js/primer_javascript.js"></script>
+            <div class="container">
+                <div class="row">
+                    <div class="table-resposive">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>MATERIA</th>
+                                <td>LUNES</td>
+                                <td>MARTES</td>
+                                <th>MIERCOLES</th>
+                                <td>JUEVES</td>
+                                <td>VIERNES</td>
+                            </tr>
+                            <tr>
+                                <td>FISICA</td>
+                                <td></td>
+                                <td class="table-warning">8-10 am </td>
+                                <td></td>
+                                <td>8-10 am </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>FISICA</td>
+                                <td></td>
+                                <td>8-10 am </td>
+                                <td></td>
+                                <td>8-10 am </td>
+                                <td> </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div id="iconos">
+
+            <a href="#"><i class="bi bi-facebook"></i></a>
+
+            <a href="#"><i class="bi bi-twitter"></i></a>
+
+            <a href="#"><i class="bi bi-instagram"></i></a>
+
+        </div>
+        </br> </br> </br> </br> </br> </br> </br> </br> </br>
 
 </body>
 

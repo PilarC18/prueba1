@@ -155,8 +155,24 @@ background-color: darkgreen;
   th{
     background-color: rgba(176, 132, 218, 0.548);
   }
+  .color1{
+    background-color: darkgrey;
+    text-align: center;
+  }
+  .aliner_logo{
+    text-align: center;
+  }
   
-  /*Si el tamaño maximo del dispositivo es 640px entonces... celulares*/
+  .color2{
+    background-color: darkslateblue;
+  }
+  
+  .color3{
+    background-color:dodgerblue;
+  }
+
+  
+  /* rwdSi el tamaño maximo del dispositivo es 640px entonces... celulares*/
   @media(max-width: 640px){
     header{
       text-align: center;
